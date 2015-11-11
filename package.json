@@ -1,1 +1,30 @@
-{"private": true}
+{
+    "private": true,
+    "name": "grepnet-client-plugin-chrome",
+    "version": "0.0.1",
+    "description": "Display notification popup when web page is update and plugin match passed phrase.",
+    "scripts": {
+        "clear": "rm -rf node_modules/ app/bower_components/ app/dist/",
+        "lint": "eslint ./app/scripts/* --ignore-pattern ./app/scripts/vendor/ ; exit 0"
+    },
+    "eslintConfig": {
+        "extends": "piecioshka",
+        "parser": "babel-eslint",
+        "env": {
+            "browser": true,
+            "amd": true,
+            "es6": true
+        }
+    },
+    "devDependencies": {
+        "babel-core": "^6.1.4",
+        "babel-eslint": "^4.1.5",
+        "babel-loader": "^6.1.0",
+        "babel-preset-es2015": "^6.1.4",
+        "babel-preset-stage-0": "^6.1.2",
+        "eslint": "^1.9.0",
+        "eslint-config-piecioshka": "^1.0.9",
+        "eslint-loader": "^1.1.1",
+        "webpack": "^1.12.4"
+    }
+}

@@ -1,2 +1,6 @@
 node_modules/
 npm-debug.log
+
+app/dist/
+app/bower_components/
+.eslintrc

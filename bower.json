@@ -1,0 +1,6 @@
+{
+    "name": "grepnet-client-plugin-chrome",
+    "dependencies": {
+        "bootstrap": "4.0.0-alpha"
+    }
+}
