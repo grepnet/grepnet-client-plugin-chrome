@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "grepnet-client-plugin-chrome",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Display notification popup when web page is update and plugin match passed phrase.",
     "scripts": {
         "clear": "rm -rf node_modules/ app/bower_components/ app/dist/",
@@ -14,6 +14,9 @@
             "browser": true,
             "amd": true,
             "es6": true
+        },
+        "globals": {
+            "google": true
         }
     },
     "devDependencies": {

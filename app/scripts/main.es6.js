@@ -1,9 +1,17 @@
 class Grepnet {
-    time = null;
-
     constructor() {
-        this.time = Date.now();
+        let data = { greeting: 'hello' };
+
+        chrome.runtime.sendMessage(data, (response) => {
+            console.log(response);
+        });
     }
 }
 
-console.log(new Grepnet());
+window.addEventListener('load', () => {
+    let $btn = document.querySelector('.btn');
+
+    $btn.addEventListener('click', function () {
+        new Grepnet();
+    });
+});

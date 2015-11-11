@@ -3,7 +3,7 @@
     "name": "grepnet-client-plugin-chrome",
     "description": "Display notification popup when web page is update and plugin match passed phrase.",
     "short_name": "grepnet",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "browser_action": {
         "default_popup": "app/index.html",
         "default_icon": "app/images/gear-32x32.png"
@@ -15,7 +15,9 @@
     },
     "permissions": [
         "http://www.grepnet.io:3000/",
-        "notifications"
+        "alarms",
+        "notifications",
+        "storage"
     ],
     "background": {
         "scripts": [

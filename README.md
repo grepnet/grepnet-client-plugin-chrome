@@ -21,6 +21,16 @@ Add task is simple.
 
 When checker match phrase you will get notification on your desktop.
 
+## Developer Setup
+
+```
+make
+```
+
+## Thanks
+
+I appreciate created manual about Event Pages by Google Team: https://developer.chrome.com/extensions/event_pages
+
 ## License
 
 [The MIT License](http://piecioshka.mit-license.org)
