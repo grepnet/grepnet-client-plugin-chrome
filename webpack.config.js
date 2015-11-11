@@ -2,9 +2,12 @@ module.exports = {
     resolve: {
         extensions: ['.es6.js', '.js', '']
     },
-    entry: './app/scripts/main',
+    entry: {
+        main: './app/scripts/main',
+        event: './app/scripts/event'
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
         path: './app/dist'
     },
     module: {
